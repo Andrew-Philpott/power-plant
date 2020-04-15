@@ -114,33 +114,6 @@ function createPropertyCountSelect(i) {
   </select>`;
   return result;
 }
-
-// function definePlantFunctions(plants) {
-//   const result = ``;
-//   for (let i = 0; i < plants.length; i++) {
-//     result += `<label for="plant-${i}-name">Plant${header} name</label>
-//     <input
-//     type="text"
-//     class="form-control plant-name"
-//     id="plant-${i}-name" required
-//   />`;
-//   }
-// }
-
-// function propertyDescription(plant) {}
-// function propertyFunction(plant) {}
-// function createPlantInputContainers(plantCount) {
-//   let columnSize;
-//   if (plantCount === 3) {
-//     columnSize = 4;
-//   } else if (plantCount === 2) {
-//     columnSize = 6;
-//   } else if (plantCount === 1) {
-//     columnSize = 12;
-//   }
-//   for (let i = 0; i < plantCount; i++) {}
-// }
-
 function createPlantsPage(plants) {
   let columnSize;
   let count = plants.length;
@@ -214,25 +187,12 @@ function createPlant(plant) {
 }
 function createAbilityButtons(plant, types, i) {
   let result = ``;
-  // let plantName = plant[0];
   for (let j = 0; j < 3; j++) {
     result += `<button id="${plant[0]}${types[j][0]}${i}" class="ability">Give ${types[j][0]} (${types[j][1][j][2]})</button>`;
   }
 
   return result;
-  // $("#game").on("click", ".ability", function () {
-  //   const newState = stateChanger(ability);
-  //   // let pizzaCrust = $(this).text();
-  //   // createPizzaSizesView(pizzas, pizzaCrust);
 }
-
-//the buttons id needs to be the type soil, light, hydration
-//The button needs to say what it does with add
-//and we need a div element to store the value
-
-// function createAbiliyListeners(numOfAbilities) {
-
-// }
 
 const storeState = () => {
   let currentState = {};
